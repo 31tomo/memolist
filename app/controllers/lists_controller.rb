@@ -1,7 +1,7 @@
 class ListsController < ApplicationController
 
   def index
-    @list = "これはコントローラーで定義したインスタンス変数を確認するための文字列です"
+    @lists = List.all
   end
 
 end
