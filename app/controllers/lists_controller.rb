@@ -7,4 +7,9 @@ class ListsController < ApplicationController
   def new
   end
 
+  def create
+    List.create(memo: params[:memo])
+    redirect_to "/lists"
+  end
+
 end
